@@ -1,0 +1,15 @@
+EXEMPLO COMANDOS GitHub:
+
+https://github.com/ritacruz-senai/teste-github.git
+
+ Usuário: ritacruz-senai
+Email: rita.cruz@edu.senai.br
+
+git init
+git config --global user.name "ritacruz-senai"
+git config --global user.email "rita.cruz@edu.senai.br"
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ritacruz-senai/teste-github.git
+git push -u origin main
