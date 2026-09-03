@@ -1,33 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Digital - Rita</title>
-</head>
+    <style>
+        /* Configurações gerais da página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f0f5; /* Fundo em tom pastel suave */
+            color: #333333; /* Cor do texto */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o rodapé fique sempre embaixo */
+            align-items: center;
+        }
 
+        /* Estilo do Cabeçalho */
+        header {
+            background-color: #ffb7c5; /* Rosa pastel */
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ffffff;
+            font-size: 24px;
+        }
+
+        /* Conteúdo principal (Caixa central) */
+        main {
+            background-color: #ffffff; /* Fundo branco para o conteúdo */
+            max-width: 500px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 15px; /* Bordas arredondadas na caixinha */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        main h2 {
+            color: #ff8fa3; /* Tom de rosa mais forte para o título */
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* Estilização dos tópicos (Lista) */
+        ul {
+            list-style: none; /* Remove as bolinhas pretas padrão */
+            text-align: left; /* Alinha o texto dos tópicos à esquerda */
+            display: inline-block; /* Mantém a lista centralizada na caixinha */
+            margin: 0 0 20px 0;
+            padding-left: 0; /* Remove o recuo padrão */
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+            color: #4a4a4a;
+            position: relative;
+            padding-left: 30px; /* Dá espaço para a patinha não sumir */
+        }
+
+        /* Adiciona a patinha antes de cada item da lista */
+        li::before {
+            content: "🐾";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Estilização da foto do gato */
+        img {
+            border-radius: 12px; /* Deixa as pontas da foto redondinhas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Botão/Link de higiene */
+        a {
+            display: inline-block;
+            background-color: #ff8fa3;
+            color: white;
+            text-decoration: none; /* Remove o sublinhado padrão */
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 10px;
+        }
+
+        /* Efeito quando passa o mouse por cima do link */
+        a:hover {
+            background-color: #ff758f;
+            transform: scale(1.03); /* Dá um leve zoom ao passar o mouse */
+        }
+
+        /* Rodapé */
+        footer {
+            margin-top: auto; /* Empurra o rodapé para o fim da página */
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            background-color: #333333;
+            color: #ffffff;
+            font-size: 14px;
+        }
+    </style>
+</head>
 <body>
+
     <!--Cabecalho-->
     <header>
-    <h1>Este é o Perfil Digital de Rita</h1>
+        <h1>Este é o Perfil Digital de Rita</h1>
     </header>
+
     <!--Conteudo principal-->
     <main>
-    <h2>Sobre Mim</h2>
-    <p>Olá! Tenho 16 anos e sou estudante. Estou aprendendo conceitos básicos de HTML e gosto muito de animais, especialmente de gatos.</p>
-    <br>
-    <img src="img/gato.png" alt="imagem de um gato filhote" width="250">
-    <br>
-    <a href="https://labovet.com.br/blog-pet/cuidados-essenciais-com-gatos-filhotes" target="_blank">Clique aqui para ver o site sobre cuidados com gatos filhotes</a>
-
+        <h2>Sobre Mim</h2>
+        
+        <!-- Lista personalizada com patinhas -->
+        <ul>
+            <li><strong>Idade:</strong> Tenho 16 anos.</li>
+            <li><strong>Ocupação:</strong> Sou estudante.</li>
+            <li><strong>Estudos:</strong> Estou aprendendo conceitos básicos de HTML e CSS.</li>
+            <li><strong>Interesses:</strong> Gosta muito de animais, especialmente de gatos.</li>
+        </ul>
+        
+        <img src="img/gato.png" alt="imagem de um gato filhote" width="250">
+        
+        <br>
+        <!-- Link atualizado para o site da Petz -->
+        <a href="https://www.petz.com.br/blog/higiene-animal-dicas-bichano-limpo/" target="_blank">Clique aqui para ver dicas de higiene para gatos</a>
     </main>
+
     <!--Rodape-->
     <footer>
-    <p>Contato: rita.cruz@edu.senai.br</p>
+        <p>Contato: rita.cruz@edu.senai.br</p>
     </footer>
-    
 
 </body>
-
 </html>

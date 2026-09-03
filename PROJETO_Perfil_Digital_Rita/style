@@ -1,0 +1,83 @@
+/* Configurações gerais da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f0f5; /* Fundo em tom pastel suave */
+    color: #333333; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #ffb7c5; /* Rosa pastel */
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Conteúdo Principal */
+main {
+    background-color: #ffffff; /* Fundo branco para o conteúdo */
+    max-width: 500px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px; /* Bordas arredondadas na caixinha */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+main h2 {
+    color: #ff8fa3; /* Tom de rosa mais forte para o título */
+}
+
+main p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Estilização da foto do gato */
+img {
+    border-radius: 12px; /* Deixa as pontas da foto redondinhas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+}
+
+/* Botão/Link de cuidados */
+a {
+    display: inline-block;
+    background-color: #ff8fa3;
+    color: white;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+/* Efeito quando passa o mouse por cima do link */
+a:hover {
+    background-color: #ff758f;
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
